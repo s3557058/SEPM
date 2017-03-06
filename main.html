@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aucon</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!--
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	-->
+  	<script type="text/javascript">
+  		function userButton(){
+  			var x = document.getElementById('userContain');
+  			if(x.style.display === 'none'){
+  				x.style.display = 'block';
+  			}
+  			else{
+  				x.style.display = 'none';
+  			}
+  		}
+  	</script>
+  	
+</head>
+<body>
+	<div class="header">
+		<div class="brand">AuCon</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 status">
+			<button id="userBtn" onclick="userButton()">User</button>
+			<div id="userContain">
+			  	<ul>
+				    <li>User: Khang</li>
+				    <li>Pref temp: 20&deg;C</li>
+				   	<button id="overwBtn">Overwrite</button>
+			 	</ul>
+
+		 	</div>
+		</div>
+
+		
+
+		<div class="col-6">
+			
+			<!-- ********matching temperature progress bar*********
+			<div class="container">
+			 	<div class="progress">
+				    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+				    50%
+				    </div>
+			 	</div>
+			</div>
+			-->
+
+		  	<h1 class="temp">Current
+		  	<div> 30&deg;C</div>
+		  	</h1>
+		</div>
+
+
+		<!-- ******Side menu and footer*******
+		<div class="col-3 right">
+		  	<div class="aside">
+			    <h2>Members</h2>
+			    <ul>
+				    <li>Nguyen Trung Dang Thi</li>
+				    <li>Pham Anh Tuan</li>
+					<li>Luong Thien Khang</li>
+			    </ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>Copyright &copy Luong Thien Khang.</p>
+		</div>
+		-->
+	</div>
+</body>
+</html>
