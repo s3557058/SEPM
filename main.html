@@ -6,30 +6,41 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<!--
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	-->
-  	<script type="text/javascript">
-  		function userButton(){
-  			var x = document.getElementById('userContain');
-  			if(x.style.display === 'none'){
-  				x.style.display = 'block';
-  			}
-  			else{
-  				x.style.display = 'none';
-  			}
-  		}
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script>
+  		$(document).ready(function(){
+  			$("#userBtn").click(function(){
+  				$("#userContain").toggle();
+  			});
+  		});
   	</script>
   	
 </head>
 <body>
 	<div class="header">
-		<div class="brand">AuCon</div>
+		<!-- Menu icon -->
+		<div class="dropdown">
+			<div id="menuBtn" class="dropbtn">
+				<div id="firstBar"></div>
+				<div id="secondBar"></div>
+				<div id="thirdBar"></div>
+			</div>
+			<div id="menuContent" class="drop-content">
+				<a href="">Profile 1</a>
+			</div>
+		</div>
+		
+		<!-- branch name -->
+		<div class="brand">Smart Air</div>
 	</div>
 
 	<div class="row">
+
+		<!-- User Profile-->
 		<div class="col-3 status">
-			<button id="userBtn" onclick="userButton()">User</button>
+			<button id="userBtn">User</button>
 			<div id="userContain">
 			  	<ul>
 				    <li>User: Khang</li>
@@ -41,7 +52,7 @@
 		</div>
 
 		
-
+		<!--Current temperature-->
 		<div class="col-6">
 			
 			<!-- ********matching temperature progress bar*********
